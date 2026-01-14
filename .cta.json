@@ -1,0 +1,17 @@
+{
+  "projectName": "github-profile-viewer",
+  "mode": "file-router",
+  "typescript": true,
+  "tailwind": true,
+  "packageManager": "npm",
+  "git": true,
+  "install": true,
+  "addOnOptions": {},
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": [
+    "start",
+    "shadcn",
+    "nitro"
+  ]
+}
