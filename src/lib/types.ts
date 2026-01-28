@@ -20,6 +20,9 @@ export interface GitHubRepo {
   forks_count: number
   updated_at: string
   topics: Array<string>
+  license: {
+    spdx_id: string
+  } | null
 }
 export interface APIError {
   message: string
