@@ -8,7 +8,7 @@ interface RepoCardProps {
 
 export function RepoCard({ repo }: RepoCardProps) {
   return (
-    <Card>
+    <Card className="transition-transform duration-200 hover:scale-[1.03] hover:shadow-lg">
       <CardHeader>
         <CardTitle>
           <a

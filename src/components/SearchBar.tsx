@@ -32,7 +32,7 @@ export function SearchBar({
 					value={username}
 					onChange={(e) => setUsername(e.target.value)}
 					placeholder={placeholder}
-					className="flex-1 border-0 bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 p-0"
+					className="flex-1 border-0 bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 p-0 shadow-none"
 				/>
 				<Button type="submit" size="sm" disabled={!username.trim()}>
 					Search

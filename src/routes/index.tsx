@@ -26,12 +26,6 @@ function HomePage() {
 					</div>
 
 					<SearchBar onSearch={handleSearch} />
-
-					<p className="text-sm text-muted-foreground">
-						Try searching for: <span className="font-mono">torvalds</span>,{' '}
-						<span className="font-mono">gaearon</span>, or{' '}
-						<span className="font-mono">tj</span>
-					</p>
 				</div>
 			</main>
 		</div>

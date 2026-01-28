@@ -18,6 +18,16 @@ code {
     source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.4s;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px);}
+    to { opacity: 1; transform: none;}
+  }
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
