@@ -1,6 +1,6 @@
 import type { GitHubRepo } from '@/lib/types';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from './ui/card';
-import { Badge } from './ui/badge';
+import { LanguageTag } from './LanguageTag';
 
 interface RepoCardProps {
   repo: GitHubRepo;
@@ -27,10 +27,8 @@ export function RepoCard({ repo }: RepoCardProps) {
       <CardContent>
         <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
           {repo.language && (
-            <Badge variant="outline" className="px-2 py-0.5">
-              {repo.language}
-            </Badge>
-          )}
+  <LanguageTag language={repo.language} />
+)}
           <span>⭐ {repo.stargazers_count}</span>
           <span>🍴 {repo.forks_count}</span>
         </div>
